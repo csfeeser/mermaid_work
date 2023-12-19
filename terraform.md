@@ -1,70 +1,70 @@
 ```mermaid
 flowchart LR
-	Installing_Terraform["<span style=&quot;color:black;&quot;>Installing Terraform</span>"] ==x Writing_Module["<span style=&quot;color:black;&quot;>Writing a Module</span>"]
+	Installing_Terraform["<span style="color:black;">Installing Terraform</span>"] ==x Writing_Module["<span style="color:black;">Writing a Module</span>"]
 	style Installing_Terraform fill:#A1C6E7
 	style Writing_Module fill:#A1C6E7
-	Writing_Module ==x Terraform_Block["<span style=&quot;color:black;&quot;>Terraform Block</span>"]
+	Writing_Module ==x Terraform_Block["<span style="color:black;">Terraform Block</span>"]
 	style Terraform_Block fill:#A1C6E7
-	Writing_Module ==x Provider_Block["<span style=&quot;color:black;&quot;>Provider Block</span>"]
+	Writing_Module ==x Provider_Block["<span style="color:black;">Provider Block</span>"]
 	style Provider_Block fill:#A1C6E7
-	Writing_Module ==x Resource_Block["<span style=&quot;color:black;&quot;>Resource Block</span>"]
+	Writing_Module ==x Resource_Block["<span style="color:black;">Resource Block</span>"]
 	style Resource_Block fill:#FAD02E
-	Writing_Module ==x Module_Block["<span style=&quot;color:black;&quot;>Module Block</span>"]
+	Writing_Module ==x Module_Block["<span style="color:black;">Module Block</span>"]
 	style Module_Block fill:#A1C6E7
-	Writing_Module ==x Variable_Block["<span style=&quot;color:black;&quot;>Variable Block</span>"]
+	Writing_Module ==x Variable_Block["<span style="color:black;">Variable Block</span>"]
 	style Variable_Block fill:#A1C6E7
-	Writing_Module ==x Output_Block["<span style=&quot;color:black;&quot;>Output Block</span>"]
+	Writing_Module ==x Output_Block["<span style="color:black;">Output Block</span>"]
 	style Output_Block fill:#A1C6E7
-	Resource_Block ==x Count_Meta_Argument["<span style=&quot;color:black;&quot;>Count Meta-Argument</span>"]
+	Resource_Block ==x Count_Meta_Argument["<span style="color:black;">Count Meta-Argument</span>"]
 	style Count_Meta_Argument fill:#FAD02E
-	Resource_Block ==x For_each_Meta_Argument["<span style=&quot;color:black;&quot;>For_each Meta-Argument</span>"]
+	Resource_Block ==x For_each_Meta_Argument["<span style="color:black;">For_each Meta-Argument</span>"]
 	style For_each_Meta_Argument fill:#FAD02E
-	Resource_Block ==x Provisioners["<span style=&quot;color:black;&quot;>Provisioners</span>"]
+	Resource_Block ==x Provisioners["<span style="color:black;">Provisioners</span>"]
 	style Provisioners fill:#FAD02E
-	Resource_Block ==x Depends_on_Meta_Argument["<span style=&quot;color:black;&quot;>Depends_on Meta-Argument</span>"]
+	Resource_Block ==x Depends_on_Meta_Argument["<span style="color:black;">Depends_on Meta-Argument</span>"]
 	style Depends_on_Meta_Argument fill:#FAD02E
-	Writing_Module ==x Workspaces["<span style=&quot;color:black;&quot;>Workspaces</span>"]
+	Writing_Module ==x Workspaces["<span style="color:black;">Workspaces</span>"]
 	style Workspaces fill:#A1C6E7
-	Writing_Module ==x Expression_Writing["<span style=&quot;color:black;&quot;>Expression Writing</span>"]
+	Writing_Module ==x Expression_Writing["<span style="color:black;">Expression Writing</span>"]
 	style Expression_Writing fill:#FAD02E
-	Resource_Block ==x Replacing_Broken_Resources["<span style=&quot;color:black;&quot;>Replacing Broken Resources- terraform apply -replace</span>"]
+	Resource_Block ==x Replacing_Broken_Resources["<span style="color:black;">Replacing Broken Resources- terraform apply -replace</span>"]
 	style Replacing_Broken_Resources fill:#FAD02E
-	Expression_Writing ==x Terraform_Functions["<span style=&quot;color:black;&quot;>Terraform Functions</span>"]
+	Expression_Writing ==x Terraform_Functions["<span style="color:black;">Terraform Functions</span>"]
 	style Terraform_Functions fill:#FAD02E
-	Variable_Block ==x tfvars_files["<span style=&quot;color:black;&quot;>*.tfvars files</span>"]
+	Variable_Block ==x tfvars_files["<span style="color:black;">*.tfvars files</span>"]
 	style tfvars_files fill:#FAD02E
-	Data_Block["<span style=&quot;color:black;&quot;>Data Block</span>"] ==x Resource_Block
+	Data_Block["<span style="color:black;">Data Block</span>"] ==x Resource_Block
 	style Data_Block fill:#FAD02E
-	Module_Block ==x Child_Modules["<span style=&quot;color:black;&quot;>Child Modules</span>"]
+	Module_Block ==x Child_Modules["<span style="color:black;">Child Modules</span>"]
 	style Child_Modules fill:#7FB77E
-	Terraform_Block ==x Providers["<span style=&quot;color:black;&quot;>Providers</span>"]
+	Terraform_Block ==x Providers["<span style="color:black;">Providers</span>"]
 	style Providers fill:#7FB77E
-	Installing_Terraform ==x Managing_State_Files["<span style=&quot;color:black;&quot;>Managing State Files</span>"]
+	Installing_Terraform ==x Managing_State_Files["<span style="color:black;">Managing State Files</span>"]
 	style Managing_State_Files fill:#7FB77E
-	Managing_State_Files ==x Resource_Drift["<span style=&quot;color:black;&quot;>Resource Drift</span>"]
+	Managing_State_Files ==x Resource_Drift["<span style="color:black;">Resource Drift</span>"]
 	style Resource_Drift fill:#7FB77E
-	Managing_State_Files ==x CICD_with_Terraform["<span style=&quot;color:black;&quot;>CI/CD with Terraform</span>"]
+	Managing_State_Files ==x CICD_with_Terraform["<span style="color:black;">CI/CD with Terraform</span>"]
 	style CICD_with_Terraform fill:#7FB77E
-	Providers ==x Cloud_Specific_AWS_Azure_Vsphere["<span style=&quot;color:black;&quot;>Cloud Specific- AWS, Azure, Vsphere</span>"]
+	Providers ==x Cloud_Specific_AWS_Azure_Vsphere["<span style="color:black;">Cloud Specific- AWS, Azure, Vsphere</span>"]
 	style Cloud_Specific_AWS_Azure_Vsphere fill:#7FB77E
-	Managing_State_Files ==x Renaming_Resources_with_terraform_state_mv["<span style=&quot;color:black;&quot;>Renaming Resources with terraform state mv</span>"]
+	Managing_State_Files ==x Renaming_Resources_with_terraform_state_mv["<span style="color:black;">Renaming Resources with terraform state mv</span>"]
 	style Renaming_Resources_with_terraform_state_mv fill:#7FB77E
 	Writing_Module ==x Data_Block
-	Managing_State_Files ==x Reading_State_File["<span style=&quot;color:black;&quot;>Reading State File</span>"]
+	Managing_State_Files ==x Reading_State_File["<span style="color:black;">Reading State File</span>"]
 	style Reading_State_File fill:#7FB77E
 	Terraform_Functions ==x Data_Block
 	tfvars_files ==x Child_Modules
 	Variable_Block ==x Child_Modules
-	Terraform_Cloud["<span style=&quot;color:black;&quot;>Terraform Cloud</span>"] ==x Terraform_Enterprise_Discussion["<span style=&quot;color:black;&quot;>Terraform Enterprise (Discussion)</span>"]
+	Terraform_Cloud["<span style="color:black;">Terraform Cloud</span>"] ==x Terraform_Enterprise_Discussion["<span style="color:black;">Terraform Enterprise (Discussion)</span>"]
 	style Terraform_Cloud fill:#7FB77E
 	style Terraform_Enterprise_Discussion fill:#7FB77E
 	Managing_State_Files ==x Terraform_Cloud
 	subgraph Legend
-		L1["<span style=&quot;color:black;&quot;>Day One</span>"]
+		L1["<span style="color:black;">Day One</span>"]
 		style L1 fill:#A1C6E7
-		L2["<span style=&quot;color:black;&quot;>Day Two</span>"]
+		L2["<span style="color:black;">Day Two</span>"]
 		style L2 fill:#FAD02E
-		L3["<span style=&quot;color:black;&quot;>Day Three</span>"]
+		L3["<span style="color:black;">Day Three</span>"]
 		style L3 fill:#7FB77E
 	end
 ```
