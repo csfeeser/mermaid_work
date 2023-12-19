@@ -1,45 +1,5 @@
 ```mermaid
 flowchart LR
-	B["Containers and Container Images"] --> C["YAML"]
-	E["Basic Pods"] --> G["Namespaces"]
-	E --> I["kubectl commands"]
-	E --> J["Readiness/Liveness Probes"]
-	E --> K["SecurityContexts"]
-	P["Volume Mounting"] --> Q["ConfigMaps"]
-	P --> R["Secrets"]
-	E --> V["Labels"]
-	V --> X["ReplicaSets"]
-	V --> Y["DaemonSets"]
-	V --> Z["Deployments"]
-	Z --> AA["Horizontal Pod Autoscaling"]
-	A["Kubernetes Architecture"] --> B
-	C ==x D["Manifests"]
-	D ==x F["API Versioning/Deprecation"]
-	D ==x E
-	V ==x W["Annotations"]
-	V ==x AB["Jobs and CronJobs"]
-	G ==x AE["Services"]
-	AE ==x AD["NetworkPolicies"]
-	AE ==x AF["Ingress Controllers"]
-	AE ==x AG["Networking Plugins"]
-	E ==x P
-	E ==x T["Container Sidecars"]
-	T ==x U["Init Containers"]
-	P ==x S["Persistent Volume Claims,<br>Persistent Volumes, and Storage Classes"]
-	G ==x N["Roles/RoleBindings<br>ClusterRoles/ClusterRoleBindings"]
-	T ==x O["kubectl log<br>3rd Party Logging"]
-	L["Limits vs. Requests"] ==x M["LimitRanges"]
-	L ==x H["ResourceQuotas"]
-	G ==x L
-	E ==x AC["Taints and Tolerations"]
-	F ==x AI["Custom Resource Definitions"]
-	W ==x AF
-	N ==x 913349["Contexts"]
-	AH["Helm"]
-```
-
-```mermaid
-flowchart LR
     A["<span style='color:black;'>Kubernetes Architecture</span>"] --> B["<span style='color:black;'>Containers and Container Images</span>"]
     style A fill:#A1C6E7
     style B fill:#A1C6E7
